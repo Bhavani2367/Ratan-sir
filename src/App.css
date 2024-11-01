@@ -1,0 +1,79 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Base styles for the links */
+.link {
+  text-decoration: none;          /* Remove underline */
+  color: #fff;                   /* Text color */
+  padding: 10px 15px;            /* Padding around the text */
+  border-radius: 5px;            /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  display: inline-block;          /* Display as a block to control size */
+  margin: 0 10px;                /* Horizontal spacing between links */
+}
+
+/* Add a background color */
+.link {
+  background-color: #007bff;     /* Primary background color */
+}
+
+/* Change background and text color on hover */
+.link:hover {
+  background-color: #0056b3;      /* Darker shade on hover */
+  color: #ffffff;                 /* Text color remains white on hover */
+}
+
+/* Optional: Style for active link */
+.link.active {
+  background-color: #0056b3;     /* Use the same color as hover */
+  font-weight: bold;              /* Make active link bold */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+  .link {
+      padding: 8px 10px;         /* Adjust padding for smaller screens */
+      font-size: 14px;           /* Adjust font size */
+      margin: 0 5px;             /* Reduced margin for smaller screens */
+  }
+}
